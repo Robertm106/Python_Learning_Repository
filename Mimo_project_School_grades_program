@@ -1,0 +1,56 @@
+# The maximum grade for each subject is 100. So,
+# the total maximum grade a student can obtain is 400. With this information,
+# let's calculate Sam's total grade as a percentage.
+
+# Create a max_grade variable and assign the number 400 to it.
+# Create a total_percentage variable that stores Sam's grades in percentage. #
+# You can calculate the percentage by dividing the total grade that Sam achieved by the maximum grade and multiplying the result by 100.
+# Print a statement that reads: "Sam's total percentage is <total>%". Replace with the total_percentage variable.
+
+
+student_name = "Sam"
+math_grade = 88
+science_grade = 75
+english_grade = 90
+geology_grade = 69
+total_grade = math_grade + science_grade + english_grade + geology_grade
+max_grade = 400
+total_percentage = total_grade / max_grade * 100
+print(f"Sam's total percentage is {total_percentage}%")
+
+# Awesome! We receive word from the IT department in the school that the system they work with doesn't accept decimals.
+# #To ensure we only display the total percentage with integers,
+# we need to convert the total_percentage from a float to an integer.
+
+total_percentage = int(total_percentage)
+
+
+#Using the information we just obtained, let's check if Sam passed the semester. 
+# #The course instructor informs us that in order for a student to pass, 
+# #they must score a total percentage of 50 or higher.
+
+did_student_pass = 50 >= total_percentage
+
+#As we process Sam's report, we notice that Sam never participated in any sporting activities at school. 
+#Hence, Sam will get a 0 in sports. 
+# #This is an extra-curricular activity, #
+# so Sam's grades will not be affected. 
+# #However, we want to reflect this information in the report.a
+
+sporting_activities = bool(0)
+print(f"Sam participated in sporting activities: {sporting_activities}")
+
+#Using f-strings, print the following:
+#A statement that reads: Sam's total percentage as an integer is <percentage>%. Replace <percentage> with the total_percentage variable.
+#A statement that reads: Sam passed to the next semester: <boolean>. Replace <boolean> by the did_student_pass variable.
+
+print(f"Sam participated in sporting activities: {sporting_activities}")
+print(f"Sam's total percentage as an integer is {total_percentage}%")
+print(f"Sam passed to the next semester: {did_student_pass}")
+
+#Now, try tinkering with this project as you like. You may try the following:
+
+#Create variables that hold information about other subjects.
+#Calculate and print the average grade.
+#Compare subjects' grades together and print information on which one has higher grades.
+#Have fun exploring!
